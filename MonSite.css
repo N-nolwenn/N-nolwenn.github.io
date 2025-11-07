@@ -41,6 +41,36 @@ header {
     text-align: center; /* centre le contenu du header */
 
 }
+.header-content {
+    display: flex;           /* active Flexbox */
+    gap: 2em;                /* espace entre l'image et le texte */
+    align-items: center;
+    padding: 0px 0px 0px 100px;
+}
+.header-content img{
+    width: 250px;
+    height: 250px;
+}
+.header-text {
+    display: flex;
+    flex-direction: column; /* empile h1, h2 et p verticalement */
+}
+.header-content h1{
+    top: 0; 
+    font-size: 4.7em;
+    color: #2d2b26;
+    margin-bottom: 0.15em;
+    font-weight: 600;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+.header-content h2 {
+    font-weight: 400;
+    font-size: 2.4em;
+    color: #585550;
+    font-style: italic;
+    letter-spacing: 0.04em;
+  }
 footer {
     position: fixed;
     bottom: 0;
