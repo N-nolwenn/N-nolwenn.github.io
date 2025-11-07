@@ -56,8 +56,14 @@ ul {
     list-style-position: outside; /* puces alignées sur gauche du padding */
     max-width: 280px;      /* fixe une largeur max à adapter */
 }
-article {
-    background-color: #ffffff;
+.pro article {
+    background-color: #ffffff;       /* fond blanc pour la “carte” */
+    max-width: 700px;                /* largeur limitée */
+    margin: 1.5em auto;              /* centrer et espacement vertical */
+    padding: 1.5em;                  /* espace intérieur */
+    border-radius: 10px;             /* coins arrondis */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* ombre légère */
+    transition: transform 0.2s, box-shadow 0.2s; /* effet au survol */
 }
 
 header {
@@ -81,6 +87,13 @@ header {
 .pro {
     background: #e7ded2;
 }
+.pro p {
+    max-width: 700px; /* largeur maximale */
+    margin: 0 auto 1em auto; /* centrer horizontalement et espacement vertical */
+    line-height: 1.6; /* améliorer la lisibilité */
+    text-align: justify; /* texte justifié pour un rendu plus propre */
+}
+
 
 .logo{
     width: 150px;
