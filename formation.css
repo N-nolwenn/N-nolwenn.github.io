@@ -1,11 +1,11 @@
 *{
     font-family: "Cormorant Garamond", serif;
+
 }
 
 div {
     padding: 2px;
     text-align: center;
-    border-radius: 22px 22px 22px 22px;
 }
 h1 {
     top: 0; 
@@ -45,13 +45,11 @@ h5 {
 }
 body {
     padding-bottom: 120px; /* espace pour ne pas que le footer recouvre le contenu */
-        background: #e7ded2;
+    background: #F7CAC9;
 
 }
 
-header {
-    background-color: #ffffff;
-}
+
 
 footer {
     position: fixed;
@@ -62,6 +60,7 @@ footer {
     background-color: #ffffff;
 }
 
+
 p {
     font-size: 1.2em;
     line-height: 1.6em;
@@ -70,7 +69,11 @@ p {
     margin: 0 auto 1em auto; /* centrer horizontalement et espacement vertical */
     line-height: 1.6; /* améliorer la lisibilité */
     text-align: justify; /* texte justifié pour un rendu plus propre */
+    border-bottom: #f07472 2px solid;
+    border-radius: 22px 22px 22px 22px;
+    padding: 20px;
 }
+
 details {
     margin-bottom: 2em;             /* espacement entre les sections */
     cursor: pointer;
@@ -78,14 +81,21 @@ details {
 }
 
 summary {
-    background-color: #ffffff;       /* fond blanc pour la “carte” */
-    max-width: 700px;                /* largeur limitée */
-    margin: 1.5em auto;              /* centrer et espacement vertical */
-    padding: 1.5em;                  /* espace intérieur */
-    border-radius: 10px;             /* coins arrondis */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* ombre légère */
-    transition: transform 0.2s, box-shadow 0.2s; /* effet au survol */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
+
+.logo{
+    width: 150px;
+    margin-top: 10px;
+}
+
+
 
 .tabs {
   display: flex;

@@ -1,11 +1,7 @@
 *{
     font-family: "Cormorant Garamond", serif;
 }
-div {
-    padding: 2px;
-    text-align: center;
-    border-radius: 22px 22px 22px 22px;
-}
+
 h1 {
     top: 0; 
     font-size: 4.7em;
@@ -25,25 +21,52 @@ h2 {
 h3 {
     text-align: center;
     font-size: 2.2em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+
 }
 h4 {
     text-align: center;
     font-size: 1.4em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+
 }
 h5 {
     text-align: center;
     font-size: 1.2em;
+    font-style: italic;
+    letter-spacing: 0.04em;
 }
-header {
-  background: #f5f2ef;
-  padding: 40px 30px 28px 30px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  border-radius: 0 0 22px 22px;
+body {
+    padding-bottom: 120px; /* espace pour ne pas que le footer recouvre le contenu */
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #f5f2ef;
+
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #3b3a36;
+}
+div {
+    padding: 2px;
+    text-align: center;
+    border-radius: 22px 22px 22px 22px;
+}
+
 .header-content {
   display: flex;
-    max-width: 700px;
-  align-items: justify;    
+  max-width: 1000px;
+  align-items: center;    
   justify-content: center;
   gap: 2em;
   text-align: center;
@@ -52,7 +75,7 @@ header {
 
 /* bloc texte */
 .header-text {
-  flex: 1;                  /* 🟢 prend toute la largeur disponible */
+  flex: 1;                  /* prend toute la largeur disponible */
   background-color: #f7f6f3; /* optionnel : pour visualiser */
   padding: 1em;
   display: flex;
@@ -62,7 +85,7 @@ header {
 /* image */
 .profile-pic {
   width: 250px;
-  height: 100%;             /* 🟢 remplit la hauteur du conteneur */
+  height: 100%;             /* remplit la hauteur du conteneur */
   object-fit: cover;        /* garde les proportions sans déformation */
 }
 
@@ -91,30 +114,6 @@ header h2 {
 header p {
   line-height: 1.6;
   text-align: justify;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    background-color: #f5f2ef;
-}
-p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    color: #3b3a36;
-}
-
-.pro {
-    background: #e7ded2;
-}
-.pro p {
-    max-width: 700px; /* largeur maximale */
-    margin: 0 auto 1em auto; /* centrer horizontalement et espacement vertical */
-    line-height: 1.6; /* améliorer la lisibilité */
-    text-align: justify; /* texte justifié pour un rendu plus propre */
 }
 
 
@@ -162,6 +161,7 @@ p {
 
 }
 /* --- ONGLET (NAVIGATION) --- */
+
 .tabs {
   display: flex;
   justify-content: center;

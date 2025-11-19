@@ -21,15 +21,27 @@ h2 {
 h3 {
     text-align: center;
     font-size: 2.2em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+
 }
 h4 {
     text-align: center;
     font-size: 1.4em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+
 }
 h5 {
     text-align: center;
     font-size: 1.2em;
+    font-style: italic;
+    letter-spacing: 0.04em;
 }
+body {
+    padding-bottom: 120px; /* espace pour ne pas que le footer recouvre le contenu */
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -38,15 +50,16 @@ footer {
     text-align: center;
     background-color: #f5f2ef;
 }
+
 p {
     font-size: 1.2em;
     line-height: 1.6em;
     color: #3b3a36;
+    text-align: justify;
 }
 div {
     padding: 2px;
     text-align: center;
-    border-radius: 22px 22px 22px 22px;
 }
 ul {
     display: inline-block; /* transforme la liste en bloc en ligne pour centrer */
@@ -56,7 +69,12 @@ ul {
     list-style-position: outside; /* puces alignées sur gauche du padding */
     max-width: 280px;      /* fixe une largeur max à adapter */
 }
-.pro article {
+details {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+summary {
     background-color: #ffffff;       /* fond blanc pour la “carte” */
     max-width: 700px;                /* largeur limitée */
     margin: 1.5em auto;              /* centrer et espacement vertical */
@@ -66,18 +84,15 @@ ul {
     transition: transform 0.2s, box-shadow 0.2s; /* effet au survol */
 }
 
-
 header {
   background: #f5f2ef;
-  padding: 40px 30px 28px 30px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  border-radius: 0 0 22px 22px;
-  text-align: center;;
+  text-align: center;
 }
 .header-content {
   display: flex;
-    max-width: 700px;
-  align-items: justify;    
+    max-width: 1000px;
+  align-items: center;    
   justify-content: center;
   gap: 2em;
   text-align: center;
@@ -121,11 +136,6 @@ header h2 {
     text-align: center;
 }
 
-/* paragraphe */
-header p {
-  line-height: 1.6;
-  text-align: justify;
-}
 
 .sommaire {
     background: #c6beb0;
@@ -154,12 +164,14 @@ header p {
 
 .pro {
     background: #e7ded2;
+    font-size: 1.2em;
 }
 .pro p {
     max-width: 700px; /* largeur maximale */
     margin: 0 auto 1em auto; /* centrer horizontalement et espacement vertical */
     line-height: 1.6; /* améliorer la lisibilité */
     text-align: justify; /* texte justifié pour un rendu plus propre */
+    font-size: 1.2em;
 }
 
 
@@ -173,7 +185,7 @@ header p {
 }
 
 .diplome-date{
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: #585550;
     font-style: italic;
     text-align: right;
@@ -195,6 +207,8 @@ header p {
     border-bottom: #f07472 2px solid;
     font-size: 1.2em;
     line-height: 1.6em;
+    border-radius: 22px 22px 22px 22px;
+
 }
 .projectPython {
     position: relative; /* nécessaire pour le positionnement absolu du pseudo-élément */
@@ -215,7 +229,7 @@ header p {
     top: 0; left: 0; right: 0; bottom: 0;
     background-image: url("images/python.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     opacity: 0.3; /* niveau d'opacité désiré, ajustable */
     z-index: -1; /* place le calque derrière le contenu */

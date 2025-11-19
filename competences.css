@@ -45,7 +45,7 @@ h5 {
 }
 body {
     padding-bottom: 120px; /* espace pour ne pas que le footer recouvre le contenu */
-        background: #e7ded2;
+    background: #a7b6d1;
 
 }
 
@@ -60,6 +60,12 @@ footer {
     left: 0;
     text-align: center;
     background-color: #ffffff;
+}
+img {
+    max-width: 40%;   /* ne dépasse jamais la largeur de son conteneur */
+    height: auto;      /* garde les proportions de l'image */
+    display: block;    /* élimine l’espace blanc en dessous de l’image */
+    margin: 0 auto;    /* centre l'image horizontalement si nécessaire */
 }
 
 p {
