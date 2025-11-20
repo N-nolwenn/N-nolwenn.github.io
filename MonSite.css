@@ -30,13 +30,12 @@ details {
   HEADER (structure & style)
    ========================================================= */
 .header-content {
-  display: flex;
-  max-width: 1000px;
-  align-items: center;    
-  justify-content: center;
-  gap: 2em;
-  text-align: center;
-  margin: 0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 /* bloc texte */
 .header-text {
