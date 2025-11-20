@@ -1,14 +1,26 @@
-
 body {
     background: #a7b6d1;
 }
 
-
 img {
-    max-width: 50%;   /* ne dépasse jamais la largeur de son conteneur */
-    height: auto;      /* garde les proportions de l'image */
-    display: block;    /* élimine l’espace blanc en dessous de l’image */
-    margin: 0 auto;    /* centre l'image horizontalement si nécessaire */
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
+/* =========================================================
+   RESPONSIVE MOBILE – BODY + IMAGES
+   ========================================================= */
+@media (max-width: 600px) {
 
+  body {
+    padding: 0 10px;
+  }
+
+  img {
+    max-width: 90%;
+    margin: 10px auto;
+    border-radius: 6px;
+  }
+}

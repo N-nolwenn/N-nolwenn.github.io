@@ -1,20 +1,31 @@
-
 body {
     background: #e7ded2;
-
 }
-
-
 
 summary {
-    background-color: #ffffff;       /* fond blanc pour la “carte” */
-    max-width: 800px;                /* largeur limitée */
-    margin: 0 auto;              /* centrer et espacement vertical */
-    padding: 1.5em;                  /* espace intérieur */
+    background-color: #ffffff;
+    max-width: 800px;
     width: 100%;
-    border-radius: 10px;             /* coins arrondis */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* ombre légère */
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
+/* =========================================================
+   RESPONSIVE MOBILE – BODY + SUMMARY
+   ========================================================= */
+@media (max-width: 600px) {
 
+  body {
+    padding: 0 10px; /* marges pour les petits écrans */
+  }
 
+  summary {
+    max-width: 100%;
+    padding: 1.2em;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    font-size: 1.05em;
+  }
+}
