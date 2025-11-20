@@ -15,20 +15,24 @@
 </head>
 <body>
     <header>
-        <!-- Hamburger menu pour mobile -->
-        <div class="hamburger" onclick="toggleMenu(this)">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        <!-- Checkbox cachée -->
+        <input type="checkbox" id="menu-toggle" />
+
+        <!-- Hamburger -->
+        <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </label>
+
+        <!-- Menu à droite -->
         <nav class="tabs">
-            <a href="index_2.html">Accueil</a>
-            <a href="pro.html" >Carrière pro</a>
-            <a href="formation.html">Formation</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="langues.html">Langues</a>
-            <a href="competences.html">Skills</a>
-            
+        <a href="index_2.html" >Accueil</a>
+        <a href="pro.html">Carrière pro</a>
+        <a href="formation.html">Formation</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="langues.html">Langues</a>
+        <a href="competences.html">Skills</a>
         </nav>
     </header>
     <h3>🎓 Mon Portfolio</h3>
