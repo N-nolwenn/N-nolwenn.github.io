@@ -90,4 +90,30 @@
     max-width: 90%;
     min-height: 180px;      /* un peu moins haute sur mobile */
     padding: 12px;
-    border-ra
+    border-radius: 12px;
+  }
+
+  /* Images de fond légèrement atténuées et centrées */
+  .projectPython::before,
+  .projectC::before,
+  .projectR::before,
+  .projectProlog::before,
+  .projectLatex::before,
+  .projectUML::before {
+    background-size: 60%;   /* un peu plus petit pour laisser de la place au texte */
+    opacity: 0.22;          /* texte plus lisible */
+  }
+
+  /* Texte interne un peu plus grand et centré */
+  .projectPython > *,
+  .projectC > *,
+  .projectR > *,
+  .projectProlog > *,
+  .projectLatex > *,
+  .projectUML > *,
+  .project > * {
+    text-align: center;
+    font-size: 1.05em;
+  }
+}
+
