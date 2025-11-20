@@ -1,124 +1,14 @@
-*{
-    font-family: "Cormorant Garamond", serif;
-}
 
-div {
-    padding: 2px;
-    text-align: center;
-    border-radius: 22px 22px 22px 22px;
-}
-h1 {
-    top: 0; 
-    font-size: 4.7em;
-    color: #2d2b26;
-    margin-bottom: 0.15em;
-    font-weight: 600;
-    letter-spacing: 0.045em;
-    text-transform: uppercase;
-}
-h2 {
-  font-weight: 400;
-  font-size: 2.4em;
-  color: #585550;
-  font-style: italic;
-  letter-spacing: 0.04em;
-}
-h3 {
-    text-align: center;
-    font-size: 2.2em;
-    font-style: italic;
-    letter-spacing: 0.04em;
-
-}
-h4 {
-    text-align: center;
-    font-size: 1.4em;
-    font-style: italic;
-    letter-spacing: 0.04em;
-
-}
-h5 {
-    text-align: center;
-    font-size: 1.2em;
-    font-style: italic;
-    letter-spacing: 0.04em;
-}
 body {
-    padding-bottom: 120px; /* espace pour ne pas que le footer recouvre le contenu */
     background: #a7b6d1;
-
 }
 
-header {
-    background-color: #ffffff;
-}
 
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    background-color: #ffffff;
-}
 img {
-    max-width: 40%;   /* ne dépasse jamais la largeur de son conteneur */
+    max-width: 50%;   /* ne dépasse jamais la largeur de son conteneur */
     height: auto;      /* garde les proportions de l'image */
     display: block;    /* élimine l’espace blanc en dessous de l’image */
     margin: 0 auto;    /* centre l'image horizontalement si nécessaire */
-}
-
-p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    color: #3b3a36;
-    max-width: 700px; /* largeur maximale */
-    margin: 0 auto 1em auto; /* centrer horizontalement et espacement vertical */
-    line-height: 1.6; /* améliorer la lisibilité */
-    text-align: justify; /* texte justifié pour un rendu plus propre */
-}
-details {
-    margin-bottom: 2em;             /* espacement entre les sections */
-    cursor: pointer;
-
-}
-
-summary {
-    background-color: #ffffff;       /* fond blanc pour la “carte” */
-    max-width: 700px;                /* largeur limitée */
-    margin: 1.5em auto;              /* centrer et espacement vertical */
-    padding: 1.5em;                  /* espace intérieur */
-    border-radius: 10px;             /* coins arrondis */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* ombre légère */
-    transition: transform 0.2s, box-shadow 0.2s; /* effet au survol */
-}
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f2ef;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
-}
-
-.tabs a {
-  flex: 1;
-  text-align: center;
-  padding: 12px 0;
-  font-size: 1.2em;
-  color: #2d2b26;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.tabs a:hover {
-  background: #ddd7d2;
-}
-
-.tabs a.active {
-  background: #2d2b26;
-  color: #fff;
 }
 
 

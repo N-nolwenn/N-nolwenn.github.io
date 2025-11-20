@@ -1,26 +1,3 @@
-/* --- Police et reset général --- */
-* {
-    font-family: "Cormorant Garamond", serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    padding-bottom: 120px; /* espace pour footer */
-    text-align: center;
-}
-
-/* --- Titres --- */
-h3 {
-    font-size: 2em;
-    margin: 20px 0 10px 0;
-}
-
-h5 {
-    font-size: 1.1em;
-    margin-bottom: 0.5em;
-}
 
 /* --- Projet Row --- */
 .projects-row {
@@ -88,35 +65,3 @@ h5 {
 .projectProlog::before { background-image: url("images/prolog.png"); }
 .projectLatex::before { background-image: url("images/latex.png"); }
 .projectUML::before { background-image: url("images/uml.png"); }
-
-
-/* --- Footer --- */
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-
-/* --- Onglet navigation --- */
-.tabs {
-    display: flex;
-    justify-content: center;
-    background-color: #f5f2ef;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
-}
-
-.tabs a {
-    flex: 1;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 1em;
-    color: #2d2b26;
-    text-decoration: none;
-}
-
-.tabs a.active { background: #2d2b26; color: #fff; }

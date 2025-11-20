@@ -1,55 +1,12 @@
-*{
+/* =========================================================
+  RESET & RÈGLES GLOBALES
+  ========================================================= */*{
     font-family: "Cormorant Garamond", serif;
 }
 
-h1 {
-    top: 0; 
-    font-size: 4.7em;
-    color: #2d2b26;
-    margin-bottom: 0.15em;
-    font-weight: 600;
-    letter-spacing: 0.045em;
-    text-transform: uppercase;
-}
-h2 {
-  font-weight: 400;
-  font-size: 2.4em;
-  color: #585550;
-  font-style: italic;
-  letter-spacing: 0.04em;
-}
-h3 {
-    text-align: center;
-    font-size: 2.2em;
-    font-style: italic;
-    letter-spacing: 0.04em;
-
-}
-h4 {
-    text-align: center;
-    font-size: 1.4em;
-    font-style: italic;
-    letter-spacing: 0.04em;
-
-}
-h5 {
-    text-align: center;
-    font-size: 1.2em;
-    font-style: italic;
-    letter-spacing: 0.04em;
-}
 body {
     padding-bottom: 120px; /* espace pour ne pas que le footer recouvre le contenu */
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
     text-align: center;
-    background-color: #f5f2ef;
-
 }
 
 p {
@@ -62,7 +19,13 @@ div {
     text-align: center;
     border-radius: 22px 22px 22px 22px;
 }
-
+details {
+    margin-bottom: 2em;             /* espacement entre les sections */
+    cursor: pointer;
+}
+/* =========================================================
+  HEADER (structure & style)
+   ========================================================= */
 .header-content {
   display: flex;
   max-width: 1000px;
@@ -72,7 +35,6 @@ div {
   text-align: center;
   margin: 0 auto ;
 }
-
 /* bloc texte */
 .header-text {
   flex: 1;                  /* prend toute la largeur disponible */
@@ -81,44 +43,73 @@ div {
   display: flex;
   align-items: center;      /* centre verticalement le texte dans sa colonne */
 }
-
 /* image */
 .profile-pic {
   width: 250px;
   height: 100%;             /* remplit la hauteur du conteneur */
   object-fit: cover;        /* garde les proportions sans déformation */
 }
-
-/* titres */
-header h1 {
-  font-size: 4.7em;
-  color: #2d2b26;
-  margin-bottom: 0.15em;
-  font-weight: 600;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-header h2 {
-  font-weight: 400;
-  font-size: 2.4em;
-  color: #585550;
-  font-style: italic;
-  letter-spacing: 0.04em;
-  margin-bottom: 1em;
-    text-align: center;
-}
-
 /* paragraphe */
 header p {
   line-height: 1.6;
   text-align: justify;
 }
+/* =========================================================
+  FOOTER
+  ========================================================= */
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #f5f2ef;
+}
+/* =========================================================
+  TYPOGRAPHIE GLOBALE
+  ========================================================= */
+h1 {
+    top: 0; 
+    font-size: 4.7em;
+    color: #2d2b26;
+    margin-bottom: 0.15em;
+    font-weight: 600;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    text-align: center;
 
-
-/* --- ONGLET (NAVIGATION) --- */
-
+}
+h2 {
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #585550;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 2.2em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+    margin: 20px 0 10px 0;
+}
+h4 {
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+}
+h5 {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5em;
+}
+/* =========================================================
+  NAVIGATION (ONGLETS)
+  ========================================================= */
 .tabs {
   display: flex;
   justify-content: center;
@@ -145,4 +136,83 @@ header p {
 .tabs a.active {
   background: #2d2b26;
   color: #fff;
+}
+
+/* =========================================================
+   RESPONSIVE TABLETTE
+   ========================================================= */
+@media (max-width: 900px) {
+
+  .header-content {
+    flex-direction: column;       /* photo au-dessus du texte */
+    gap: 1.2em;
+    padding: 0 1em;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: auto;
+  }
+
+  header p {
+    text-align: center;           /* justification trop serrée sur tablette */
+  }
+
+  h1 { font-size: 3.5em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.8em; }
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE (téléphones standards)
+   ========================================================= */
+@media (max-width: 600px) {
+
+  body {
+    padding-bottom: 150px;        /* pour laisser respirer le footer */
+  }
+
+  /* HEADER */
+  .header-content {
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 0.5em;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .header-text {
+    padding: 0.5em;
+  }
+
+  header p {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  /* TITRES */
+  h1 { font-size: 2.8em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.4em; }
+  h4 { font-size: 1.2em; }
+  h5 { font-size: 1.05em; }
+
+  /* NAVIGATION */
+  .tabs {
+    flex-direction: column;       /* onglets en colonne */
+    border-bottom: none;
+    border-top: 2px solid #ddd;
+  }
+
+  .tabs a {
+    padding: 10px 0;
+    font-size: 1.1em;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+  }
 }
