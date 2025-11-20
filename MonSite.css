@@ -174,24 +174,23 @@ h5 {
   body {
     padding-bottom: 150px;        /* pour laisser respirer le footer */
   }
+    .header-content {
+        flex-direction: column;  /* empile verticalement */
+        align-items: center;     /* centre les éléments horizontalement */
+    }
 
-  /* HEADER */
-  .header-content {
-    flex-direction: column;
-    gap: 1em;
-    padding: 0 0.5em;
-  }
+    .profile-pic {
+        order: -1;               /* photo avant le texte */
+        width: 80%;              /* ajuste la taille */
+        max-width: 250px;
+        margin-bottom: 1em;
+    }
 
-  .profile-pic {
-    width: 180px;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  .header-text {
-    padding: 0.5em;
-  }
-
+    .header-text {
+        text-align: center;      /* centre le texte sur mobile */
+        padding: 0 10px;
+    }
+  
   header p {
     text-align: center;
     font-size: 1.1em;
