@@ -94,11 +94,12 @@ h5 {
 footer {
     position: fixed;
     bottom: 0;
-    left: 0; right: 0;
-    background-color: #f5f2ef;
-    padding: 8px 0;
-    font-size: 0.9em;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #ffffff;
 }
+
 
 /* --- Onglet navigation --- */
 .tabs {
