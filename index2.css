@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column; /* empile les éléments */
+  }
+
+  .header-content img.profile-pic {
+    order: -1;   /* place la photo avant le texte */
+    width: 80%;  /* ajuste la taille si besoin */
+    max-width: 250px;
+    margin-bottom: 1em;
+  }
+
+  .header-text {
+    text-align: center; /* centre le texte sur mobile */
+    padding: 0 10px;
+  }
+}
