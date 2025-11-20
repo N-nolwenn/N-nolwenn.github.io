@@ -26,33 +26,4 @@ summary .date {
     margin-top: 10px;
 }
 
-/* =========================================================
-   RESPONSIVE MOBILE (≤ 600px)
-   ========================================================= */
-@media (max-width: 600px) {
 
-  body {
-    padding: 0 12px; /* marges pour les petits écrans */
-  }
-
-  p {
-    font-size: 1.05em;
-    padding: 15px;
-    max-width: 100%;
-    margin: 0 auto 15px auto;
-    border-radius: 16px;
-    text-align: left;
-  }
-
-  summary {
-    max-width: 100%;
-    padding: 1.2em;
-    margin-bottom: 20px;
-    font-size: 1.05em;
-  }
-
-  .logo {
-    width: 110px;
-    margin-top: 8px;
-  }
-}

@@ -140,80 +140,106 @@ h5 {
   color: #fff;
 }
 
+
 /* =========================================================
-   RESPONSIVE TABLETTE
-   ========================================================= */
-@media (max-width: 900px) {
-
-  .header-content {
-    flex-direction: column;       /* photo au-dessus du texte */
-    gap: 1.2em;
-    padding: 0 1em;
-  }
-
-  .profile-pic {
-    width: 220px;
-    height: auto;
-  }
-
-  header p {
-    text-align: center;           /* justification trop serrée sur tablette */
-  }
-
-  h1 { font-size: 3.5em; }
-  h2 { font-size: 2em; }
-  h3 { font-size: 1.8em; }
-}
-
-
 /* =========================================================
    RESPONSIVE MOBILE (téléphones standards)
    ========================================================= */
 @media (max-width: 600px) {
 
   body {
-    padding-bottom: 150px;        /* pour laisser respirer le footer */
-  }
-    .header-content {
-        flex-direction: column;  /* empile verticalement */
-        align-items: center;     /* centre les éléments horizontalement */
-    }
-
-    .profile-pic {
-        order: -1;               /* photo avant le texte */
-        width: 80%;              /* ajuste la taille */
-        max-width: 250px;
-        margin-bottom: 1em;
-    }
-
-    .header-text {
-        text-align: center;      /* centre le texte sur mobile */
-        padding: 0 10px;
-    }
-  
-  header p {
-    text-align: center;
-    font-size: 1.1em;
+    padding-bottom: 150px;
+    background: #f0f8ff;  /* fond plus Y2K */
+    color: #222;
+    font-family: 'Verdana', sans-serif;
   }
 
-  /* TITRES */
-  h1 { font-size: 2.8em; }
-  h2 { font-size: 1.6em; }
-  h3 { font-size: 1.4em; }
-  h4 { font-size: 1.2em; }
-  h5 { font-size: 1.05em; }
+  .header-content {
+      flex-direction: column;
+      align-items: center;
+  }
 
-  /* NAVIGATION */
+  .profile-pic {
+      order: -1;
+      width: 80%;
+      max-width: 250px;
+      margin-bottom: 1em;
+      border: 4px solid #ff00ff; /* cadre flashy Y2K */
+      border-radius: 50%;
+  }
+
+  .header-text {
+      text-align: center;
+      padding: 0 10px;
+      color: #ff1493; /* rose Y2K */
+      text-shadow: 1px 1px #00ffff;
+  }
+
+  p {
+      font-size: 1.05em;
+      padding: 15px;
+      max-width: 100%;
+      margin: 0 auto 15px auto;
+      border-radius: 16px;
+      background: #e0ffff; /* bleu Y2K */
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  summary {
+      cursor: pointer;
+      padding: 1.2em;
+      margin: 0 auto 15px auto;
+      font-size: 1.05em;
+      background: linear-gradient(135deg, #ffb6c1, #00ffff);
+      border-radius: 12px;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* MENU HAMBURGER */
+  .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 25px;
+      cursor: pointer;
+      margin: 15px;
+  }
+
+  .hamburger div {
+      width: 100%;
+      height: 4px;
+      background-color: #ff1493;
+      border-radius: 2px;
+      transition: all 0.3s;
+  }
+
   .tabs {
-    flex-direction: column;       /* onglets en colonne */
-    border-bottom: none;
-    border-top: 2px solid #ddd;
+      flex-direction: column;
+      border: none;
+      display: none; /* masqué par défaut */
+      margin-top: 10px;
+  }
+
+  .tabs.active {
+      display: flex; /* affiché quand on clique sur hamburger */
   }
 
   .tabs a {
-    padding: 10px 0;
-    font-size: 1.1em;
-    width: 100%;
-    border-bottom: 1px solid #dedede;
+      padding: 10px 0;
+      font-size: 1.1em;
+      width: 100%;
+      border-bottom: 1px solid #dedede;
+      color: #ff00ff;
+      text-decoration: none;
+      transition: all 0.2s;
+  }
+
+  .tabs a:hover {
+      background: #00ffff;
+      color: #fff;
+      border-radius: 8px;
   }
 }

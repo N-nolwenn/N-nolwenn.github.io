@@ -9,16 +9,3 @@ img {
     margin: 0 auto;
 }
 
-/* =========================================================
-   RESPONSIVE MOBILE – BODY + IMAGES
-   ========================================================= */
-@media (max-width: 600px) {
-
-  body {
-    padding: 0 10px;
-  }
-
-  img {
-    margin: 10px auto;
-  }
-}
