@@ -4,7 +4,7 @@ body {
 
 p {
 
-    border-bottom: 2px solid #f07472;
+    border-bottom: 2px solid hwb(1 45% 6%);
     border-radius: 22px;
 }
 
@@ -26,4 +26,16 @@ summary .date {
     margin-top: 10px;
 }
 
-
+@media (max-width: 600px) {
+summary{
+    background: #63cc0049;
+}
+body{
+    background: #ffffff;
+}
+  .tabs a.active {
+    background: none;           /* pas de fond */
+    color: #6600cc;             /* couleur du texte, violet néon par exemple */
+    font-weight: bold;       /* texte en gras */
+  }
+}

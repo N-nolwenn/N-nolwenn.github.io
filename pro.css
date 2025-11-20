@@ -11,3 +11,14 @@ summary {
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
+@media (max-width: 600px) {
+body{
+    background: #63cc0049;
+}
+  .tabs a.active {
+    background: none;           /* pas de fond */
+    color: #63cc00;             /* couleur du texte, violet néon par exemple */
+    font-weight: bold;       /* texte en gras */
+  }
+
+}
