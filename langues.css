@@ -20,6 +20,5 @@ img {
 
   img {
     margin: 10px auto;        /* petit espace autour des images */
-    border-radius: 8px;       /* coins arrondis optionnels */
   }
 }
