@@ -4,7 +4,7 @@ body {
 
 summary {
     background-color: #ffffff;
-    max-width: 800px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     padding: 1.5em;
@@ -14,6 +14,9 @@ summary {
 @media (max-width: 600px) {
 body{
     background: #63cc0049;
+}
+details p{
+      border: 4px solid #ff00ff; /* cadre flashy Y2K */
 }
   .tabs a.active {
     background: none;           /* pas de fond */

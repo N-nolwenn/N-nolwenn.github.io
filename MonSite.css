@@ -193,7 +193,10 @@ footer {
 
   summary {
       cursor: pointer;
-      padding: 1.2em;
+      display: block;       /* pour remplir le parent */
+      box-sizing: border-box; /* inclut padding dans la largeur */
+      max-width: 100%;
+      width: 100%;
       margin: 0 auto 15px auto;
       font-size: 1.05em;
       border-radius: 12px;
