@@ -1,11 +1,50 @@
-body {
-    background: #e4f5c9;
-}
 
+div.langues{
+    background-image: url("images/worldmap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    background-position: center;
+}
 img {
     max-width: 100%;
     height: auto;
-    display: block;
     margin: 0 auto;
 }
+details {
+    /* Définit une largeur maximale pour que le centrage fonctionne */
+    max-width: 600px; /* Ajustez cette valeur à votre mise en page */
+    width: 100%; /* S'assure qu'il utilise la largeur disponible jusqu'à max-width */
+    /* Centrage horizontal du bloc <details> */
+    margin: 10px auto; 
+}
+  summary {
+    display: flex;
+    align-items: center; /* centre verticalement l'image et le texte */
+    gap: 10px; /* espace entre l'image et le texte */
+    cursor: pointer; /* pour avoir le pointeur */
+  }
 
+summary img.flag {
+/* Remplacez max-width: 5% par un width en pixel */
+  width: 90px; 
+  height: auto;
+  max-width: none; /* Annuler l'héritage d'autres max-width potentiels */
+}
+
+  summary p {
+    margin: 0; /* supprime la marge par défaut du <p> */
+  }
+
+/* 1. Rendre l'élément <details> un conteneur flex horizontalement */
+details[open] {
+display: flex;
+align-items: flex-start; /* Aligne le haut du <summary> et le haut du <p> */
+}
+
+/* Modifiez cette règle pour empêcher le summary de rétrécir/grandir */
+details[open] summary {
+    flex-shrink: 0; /* Empêche le summary de devenir plus petit que son contenu */
+    flex-grow: 0;   /* Empêche le summary de grandir */
+    flex-basis: auto; /* Laisse le contenu définir sa largeur */
+}

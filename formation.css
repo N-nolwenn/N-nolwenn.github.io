@@ -15,6 +15,38 @@ summary {
     padding: 1.5em;
     text-align: center;
 }
+summary.todai {
+    background-image: url("images/logo_todai.png");
+    /* Assurez-vous d'ajouter des propriétés pour bien afficher le logo */
+    background-size: 20%; /* Taille du logo */
+    background-repeat: no-repeat; /* Ne pas répéter */
+    background-position: right 10px center; /* Positionner le logo à droite */
+    padding-right: 60px; /* Ajouter de l'espace pour que le texte ne chevauche pas le logo */
+}
+summary.nanterre {
+    background-image: url("images/logo_nanterre.png");
+    /* Assurez-vous d'ajouter des propriétés pour bien afficher le logo */
+    background-size: 20%; /* Taille du logo */
+    background-repeat: no-repeat; /* Ne pas répéter */
+    background-position: right 10px center; /* Positionner le logo à droite */
+    padding-right: 60px; /* Ajouter de l'espace pour que le texte ne chevauche pas le logo */
+}
+summary.sorbonne {
+    background-image: url("images/logo_sorbonne.png");
+    /* Assurez-vous d'ajouter des propriétés pour bien afficher le logo */
+    background-size: 20%; /* Taille du logo */
+    background-repeat: no-repeat; /* Ne pas répéter */
+    background-position: right 10px center; /* Positionner le logo à droite */
+    padding-right: 60px; /* Ajouter de l'espace pour que le texte ne chevauche pas le logo */
+}
+summary.cau {
+    background-image: url("images/logo_cau.png");
+    /* Assurez-vous d'ajouter des propriétés pour bien afficher le logo */
+    background-size: 20%; /* Taille du logo */
+    background-repeat: no-repeat; /* Ne pas répéter */
+    background-position: right 10px center; /* Positionner le logo à droite */
+    padding-right: 60px; /* Ajouter de l'espace pour que le texte ne chevauche pas le logo */
+}
 summary .date {
   font-weight: 600;
   font-size: 1.5em;
