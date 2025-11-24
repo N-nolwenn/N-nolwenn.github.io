@@ -2,7 +2,7 @@
 div.langues{
     background-image: url("images/worldmap.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     min-height: 1000px;
     background-position: center;
     background-attachment: fixed;
@@ -48,4 +48,19 @@ details[open] summary {
     flex-shrink: 0; /* Empêche le summary de devenir plus petit que son contenu */
     flex-grow: 0;   /* Empêche le summary de grandir */
     flex-basis: auto; /* Laisse le contenu définir sa largeur */
+}
+@media (max-width: 600px) {
+    /* Annule le Flexbox pour que le <p> s'empile sous le <summary> */
+    details[open] {
+        display: block; /* Annule display: flex; et revient à l'affichage par défaut */
+        gap: 0; /* Optionnel : enlever le gap s'il n'est plus utile */
+    }
+
+    /* Annule les propriétés flex spécifiques qui ne sont plus nécessaires */
+    details[open] summary {
+        /* Rétablir les propriétés par défaut pour le mode bloc */
+        flex-shrink: initial;
+        flex-grow: initial; 
+        flex-basis: initial;
+    }
 }
