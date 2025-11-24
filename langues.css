@@ -2,9 +2,10 @@
 div.langues{
     background-image: url("images/worldmap.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     min-height: 1000px;
     background-position: center;
+    background-attachment: fixed;
 }
 img {
     max-width: 100%;
